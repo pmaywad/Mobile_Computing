@@ -1,0 +1,130 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "8a25db82aa4a1dd62bc438a4aa84972a",
+    "entities": [
+      {
+        "tableName": "User",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `dateTime` TEXT, `headache` REAL NOT NULL, `nausea` REAL NOT NULL, `rateHeart` REAL NOT NULL, `rateBreathing` REAL NOT NULL, `fever` REAL NOT NULL, `cough` REAL NOT NULL, `tired` REAL NOT NULL, `shortnessOfBreath` REAL NOT NULL, `MuscleAche` REAL NOT NULL, `diarrhea` REAL NOT NULL, `soarThroat` REAL NOT NULL, `lossOfSmell` REAL NOT NULL, `latitude` INTEGER NOT NULL, `longitude` INTEGER NOT NULL, `locationTimeStamp` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dateTime",
+            "columnName": "dateTime",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "headache",
+            "columnName": "headache",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nausea",
+            "columnName": "nausea",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rateHeart",
+            "columnName": "rateHeart",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rateBreathing",
+            "columnName": "rateBreathing",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fever",
+            "columnName": "fever",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cough",
+            "columnName": "cough",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tired",
+            "columnName": "tired",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shortnessOfBreath",
+            "columnName": "shortnessOfBreath",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "MuscleAche",
+            "columnName": "MuscleAche",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "diarrhea",
+            "columnName": "diarrhea",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "soarThroat",
+            "columnName": "soarThroat",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lossOfSmell",
+            "columnName": "lossOfSmell",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "latitude",
+            "columnName": "latitude",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "longitude",
+            "columnName": "longitude",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "locationTimeStamp",
+            "columnName": "locationTimeStamp",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '8a25db82aa4a1dd62bc438a4aa84972a')"
+    ]
+  }
+}

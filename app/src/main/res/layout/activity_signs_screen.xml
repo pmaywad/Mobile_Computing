@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context="com.example.symptomTrackerApp.symptoms.MainActivity"
+    >
+
+    <Button
+        android:id="@+id/cameraRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Record Pulse"
+        android:background="#70ffffff"
+        android:layout_margin="60dp"
+        android:textColor="#ffffff"
+        android:drawableLeft="@drawable/ic_baseline_camera_alt_24"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/uploadSymptomsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/respiratoryButton"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#70ffffff"
+        android:text="Upload Symptoms"
+        android:textColor="#ffffff"
+
+        />
+
+    <Button
+        android:id="@+id/respiratoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heartRateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#70ffffff"
+        android:text="Calculate Respiratory Rate"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/uploadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gpsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#50ffffff"
+        android:drawableLeft="@drawable/ic_baseline_cloud_upload_24"
+        android:text="Upload"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:drawablePadding="20dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/heartRateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cameraRecord"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#70ffffff"
+        android:text="Calculate Heart Rate"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/heartRateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/respiratoryButton"
+        android:textColor="#ffffff"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Click to calculate Heart Rate"/>
+
+    <TextView
+        android:id="@+id/respiratoryRateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/uploadSymptomsButton"
+        android:textColor="#ffffff"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Click to calculate Respiratory Rate"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <Button
+        android:id="@+id/gpsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uploadSymptomsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#70ffffff"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:drawablePadding="10dp"
+        android:text="GPS Location"
+        android:textColor="#ffffff"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/gpsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/uploadButton"
+        android:textColor="#ffffff"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:text="Click to get location"
+        />
+
+</RelativeLayout>
