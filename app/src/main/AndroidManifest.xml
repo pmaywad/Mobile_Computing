@@ -19,12 +19,11 @@
         android:extractNativeLibs="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.symptomTrackerApp.symptoms.SymptomsActivity"></activity>
-        <activity android:name="com.example.symptomTrackerApp.symptoms.MainActivity">
+        <activity android:name="com.example.mycovidapp.symptoms.SymptomsActivity"></activity>
+        <activity android:name="com.example.mycovidapp.symptoms.MainActivity">
 
         </activity>
-        <activity android:name="com.example.symptomTrackerApp.symptoms.LoginScreen"
-            android:exported="true">
+        <activity android:name="com.example.mycovidapp.symptoms.LoginScreen">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,10 +31,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name="com.example.symptomTrackerApp.symptoms.accelerometerService" />
-        <service android:name="com.example.symptomTrackerApp.symptoms.HeartService" />
-        <service android:name="com.example.symptomTrackerApp.gps.GpsService" android:process=":remote"></service>
-        <receiver android:name="com.example.symptomTrackerApp.gps.AlarmReceiver" android:process=":remote"/>
+        <service android:name="com.example.mycovidapp.symptoms.AccService" />
+        <service android:name="com.example.mycovidapp.symptoms.HeartService" />
+        <service android:name="com.example.mycovidapp.gps.GpsService" android:process=":remote"></service>
+        <receiver android:name="com.example.mycovidapp.gps.AlarmReceiver" android:process=":remote"/>
     </application>
 
 </manifest>
