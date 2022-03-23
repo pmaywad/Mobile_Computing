@@ -4,57 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background2"
-    tools:context="com.example.symptomTrackerApp.symptoms.SymptomsActivity"
+    android:background="#DDFFE7"
    >
 
     <Spinner
-        android:id="@+id/symptomsRating"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/symptoms_spinner"
+        android:layout_width="399dp"
+        android:layout_height="65dp"
         android:spinnerMode="dropdown"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.200"
-        android:textColor="#ffffff"/>
+        app:layout_constraintVertical_bias="0.193" />
 
     <TextView
-        android:id="@+id/pageHint"
-        android:layout_width="match_parent"
+        android:id="@+id/textViewdetails"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/symptomsRating"
-        android:layout_margin="20dp"
-        android:layout_marginTop="84dp"
-        android:text="Select the symptoms and their severity"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Kindly select the symptoms and rate them accordingly"
         android:textAlignment="center"
-        android:textColor="#ffffff"
-
-        android:textSize="17dp"
-        app:layout_constraintBottom_toTopOf="@+id/symptomsRating"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/symptoms_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="20dp" />
+        app:layout_constraintVertical_bias="0.027" />
 
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="298dp"
         android:layout_height="71dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="120dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/symptomsRating" />
+        app:layout_constraintTop_toBottomOf="@+id/symptoms_spinner" />
 
     <Button
-        android:id="@+id/uploadSymptoms"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Upload Symptoms"
-        android:padding="10dp"
-        android:background="#75ffffff"
-        android:textColor="#ffffff"
+        android:layout_marginTop="196dp"
+        android:text="Upload all The Symptoms"
+        android:background="#EF7C8E"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
